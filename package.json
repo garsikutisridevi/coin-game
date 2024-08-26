@@ -1,0 +1,19 @@
+{
+    "name": "coinflip-game",
+    "version": "1.0.0",
+    "description": "A coinflip game using blockchain",
+    "main": "index.js",
+    "scripts": {
+      "start": "node server.js",
+      "build": "npm run build",
+      "deploy": "vercel --prod",
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+        "dependencies": {
+          "@solana/web3.js": "^1.18.0",
+          "@solana/wallet-adapter-base": "^0.9.35",
+          "@solana/wallet-adapter-wallets": "^0.9.35",
+          "@solana/wallet-adapter-react": "^0.9.35"
+        }
+  }
+  

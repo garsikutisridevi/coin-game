@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coin Flip Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Head or Tail</h1>
+        <p>Flip a virtual coin with your wallet!</p>
+
+        <!-- Wallet Connect Button -->
+        <button id="testWalletButton">Test Wallet Connection</button>
+        <p id="walletAddress"></p>
+
+        <!-- Token Selection -->
+        <div class="bet-container">
+            <label for="tokenSelect">Select Token:</label>
+            <select id="tokenSelect">
+                <option value="SOL">SOL</option>
+                <option value="ETH">ETH</option>
+                <option value="BTC">BTC</option>
+            </select>
+        </div>
+
+        <!-- Bet Amount Input -->
+        <div class="bet-container">
+            <label for="betAmount">Bet Amount:</label>
+            <input type="number" id="betAmount" min="0" step="0.01">
+        </div>
+
+        <!-- Select Side -->
+        <div class="side-container">
+            <label for="selectedSide">Choose your side:</label>
+            <select id="selectedSide">
+                <option value="heads">Heads</option>
+                <option value="tails">Tails</option>
+            </select>
+        </div>
+
+        <!-- Result Display -->
+        <div class="result" id="result">HEADS</div>
+
+        <button id="flipButton">Flip the coin!</button>
+        
+        <!-- Win/Loss Count -->
+        <div class="counter">
+            <p>Heads: <span id="headsCount">0</span></p>
+            <p>Tails: <span id="tailsCount">0</span></p>
+        </div>
+        <p id="outcomeMessage"></p>
+    </div>
+    <div id="confetti-container"></div>
+
+    <!-- Script Files -->
+    <script src="coinflip.js"></script>
+    <script src="wallet.js"></script>
+    <script src="blockchain.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
